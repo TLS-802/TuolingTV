@@ -13,8 +13,8 @@ export enum UpdateStatus {
 
 // 远程版本检查URL配置
 const VERSION_CHECK_URLS = [
-  'https://ghfast.top/raw.githubusercontent.com/TLS-802/TuolingTV/blob/main/VERSION.txt',
-  'https://raw.githubusercontent.com/TLS-802/TuolingTV/blob/main/VERSION.txt',
+  'https://ghfast.top/raw.githubusercontent.com/TLS-802/TuolingTV/main/VERSION.txt',
+  'https://raw.githubusercontent.com/TLS-802/TuolingTV/main/VERSION.txt',
 ];
 
 /**
