@@ -185,7 +185,7 @@ function LoginPageClient() {
               type='password'
               autoComplete='current-password'
               className='block w-full rounded-lg border-0 py-3 px-4 text-gray-900 dark:text-gray-100 shadow-sm ring-1 ring-white/60 dark:ring-white/20 placeholder:text-gray-500 dark:placeholder:text-gray-400 focus:ring-2 focus:ring-green-500 focus:outline-none sm:text-base bg-white/60 dark:bg-zinc-800/60 backdrop-blur'
-              placeholder='输入密码 【公众号：驼铃电商技术团】获取'
+              placeholder='密码在(公众号：驼铃电商技术团)获取'
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
