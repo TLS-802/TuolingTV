@@ -132,7 +132,7 @@
 
 ```bash
 # 拉取预构建镜像
-docker pull ghcr.io/senshinya/TuolingTV:latest
+docker pull ghcr.io/senshinya/moontv:latest
 
 # 运行容器
 # -d: 后台运行  -p: 映射端口 3000 -> 3000
@@ -176,12 +176,12 @@ services:
       - USERNAME=admin
       - PASSWORD=admin_password
       - NEXT_PUBLIC_STORAGE_TYPE=redis
-      - REDIS_URL=redis://TuolingTV-redis:6379
+      - REDIS_URL=redis://moontv-redis:6379
       - NEXT_PUBLIC_ENABLE_REGISTER=true
     networks:
-      - TuolingTV-network
+      - moontv-network
     depends_on:
-      - TuolingTV-redis
+      - moontv-redis
     # 如需自定义配置，可挂载文件
     # volumes:
     #   - ./config.json:/app/config.json:ro
@@ -190,12 +190,12 @@ services:
     container_name: moontv-redis
     restart: unless-stopped
     networks:
-      - TuolingTV-network
+      - moontv-network
     # 如需持久化
     # volumes:
     #   - ./data:/data
 networks:
-  TuolingTV-network:
+  moontv-network:
     driver: bridge
 ```
 
